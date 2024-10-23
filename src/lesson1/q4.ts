@@ -1,4 +1,4 @@
-function sumOfPos(arr: number[]) {
+function sumOfPos(arr: number[]): number {
     //reduceの0は初期値
     return arr.filter(f => f >= 0).reduce((acc, num) => acc + num, 0);
   }
