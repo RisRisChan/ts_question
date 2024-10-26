@@ -1,0 +1,17 @@
+"use strict";
+function myFilter(arr, predicate) {
+    const result = [];
+    for (const elm of arr) {
+        if (predicate(elm)) {
+            result.push(elm);
+        }
+    }
+    return result;
+}
+// 使用例
+const res = myFilter([1, 2, 3, 4, 5], num => num % 2 === 0);
+console.log(res);
+const res2 = myFilter(['foo', 'hoge', 'bar', 'hogehoge'], str => str.length >= 4);
+console.log(res2);
+// エラー例
+//const res3 =myFilter([1, 2, 3, 4, 5], str => str.length >= 4);
