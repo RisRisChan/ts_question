@@ -8,6 +8,7 @@ interface AddEventListenerOptionsObject{
     passive?: boolean;
 }
 
+//第2引数に指定する関数は引数無しで何も返さない関数
 declare function addEventListener(
     type: string, 
     handler:()=>void,

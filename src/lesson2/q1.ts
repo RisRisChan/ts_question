@@ -1,3 +1,5 @@
+//返り値はT[]は、返り値の型アノテーションを省略して推論してくれるため、省略OK
+
 function myFilter<T>(arr:T[], predicate:(elm:T) => boolean) {
     const result = [];
     for (const elm of arr) {

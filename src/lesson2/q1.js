@@ -1,4 +1,5 @@
 "use strict";
+//返り値はT[]は、返り値の型アノテーションを省略して推論してくれるため、省略OK
 function myFilter(arr, predicate) {
     const result = [];
     for (const elm of arr) {
